@@ -15,6 +15,8 @@ void setup() {
 void draw() {
   mouse.set(mouseX, mouseY);             //set value of mouse as mouseX,mouseY
   background(0, 200, 255);
+  text("Why should I care? Cause you weren't there when I was scared, I was so alone");
+  text("When I see you in the streets, in his arms I get weak, my body fails I'n on my knees praying");
   r.fall();         //make the raindrop fall. It should accelerate as if pulled towards the ground by earth's gravity
   r.display();      //display the raindrop
   if (r.isInContactWith(mouse)) {      //check to see if the raindrop is in contact with the point represented by the PVector called mouse
@@ -23,4 +25,9 @@ void draw() {
   if (r.loc.y > height + r.diam/2) {     //check to see if the raindrop goes below the bottom of the screen
     r.reset();                           //if it does, reset the raindrop
   }
+}
+
+
+void cry(){
+  
 }
